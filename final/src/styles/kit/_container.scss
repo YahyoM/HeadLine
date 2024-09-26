@@ -1,0 +1,41 @@
+.container {
+    width: 1050px;
+    margin: 0 auto;
+  
+    @media (max-width: 1200px) {  /* lg-laptop */
+      max-width: 900px;
+    }
+  
+    @media (max-width: 1000px) {  /* md-laptop */
+      max-width: 800px;
+    }
+  
+    @media (max-width: 900px) {  /* sm-laptop */
+      max-width: 740px;
+    }
+  
+    @media (max-width: 800px) {  /* lg-tablet */
+      max-width: 680px;
+    }
+  
+    @media (max-width: 700px) {  /* md-tablet */
+      max-width: 540px;
+    }
+  
+    @media (max-width: 620px) {  /* sm-tablet */
+      max-width: 520px;
+    }
+  
+    @media (max-width: 580px) {  /* lg-phone */
+      max-width: 460px;
+    }
+  
+    @media (max-width: 540px) {  /* md-phone */
+      max-width: 400px;
+    }
+  
+    @media (max-width: 500px) {  /* sm-phone */
+      max-width: 400px;
+      margin: 0 20px;
+    }
+  }

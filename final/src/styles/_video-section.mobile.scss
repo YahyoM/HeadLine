@@ -1,0 +1,21 @@
+@media screen and (max-width: 840px) {
+  .VIDEO_SECTION {
+    padding: 49px 0 46px;
+
+    &-title {
+      font-size: 37px;
+    }
+
+    &-quote {
+      max-width: 380px;
+    }
+
+    &-video {
+      margin-bottom: 95px;
+      &-icon {
+        width: 143px;
+        height: 143px;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.MY_NAVBAR {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-name {
+    @include give-style(16px, 600, 16px, 'Source Sans Pro');
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  &-links {
+    list-style: none;
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-item {
+      @include give-style(14px, 400, 16px, 'Source Sans Pro');
+
+      border-bottom: 2px solid #fff0;
+      transition: 0.2s ease-in-out;
+      text-transform: uppercase;
+      letter-spacing: 2.8px;
+      padding: 6px 0;
+
+      &:hover {
+        border-bottom: 2px solid #fff;
+      }
+    }
+  }
+
+  &-burger-menu {
+    cursor: pointer;
+    width: 123px;
+    display: flex;
+    justify-content: right;
+
+    &-line {
+      height: 3px;
+      width: 22px;
+      margin: 4px 0;
+      background: inherit;
+    }
+  }
+}

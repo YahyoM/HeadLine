@@ -1,0 +1,8 @@
+@mixin give-style( $fz-size, $fz-weight, $fz-height, $fz-family) {
+    color: #fff;
+    font-style: normal;
+    font-size: $fz-size;
+    font-weight: $fz-weight;
+    font-family: $fz-family;
+    line-height: $fz-height;
+  }

@@ -1,0 +1,22 @@
+@media screen and (max-width: 840px) {
+  footer {
+    .MY_FOOTER {
+      display: block;
+      margin: 25px auto 37px;
+      text-align: center;
+    }
+
+    .laptop-version {
+      display: block;
+    }
+
+    .mobile-version {
+      display: none;
+    }
+
+    .piece {
+      width: 225px;
+      margin: 0 auto;
+    }
+  }
+}

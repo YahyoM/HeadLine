@@ -1,0 +1,57 @@
+.VIDEO_SECTION {
+  background-image: url('../../assets/img/video.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+
+  &-title {
+    @include give-style(50px, 400, 50px, 'Russo One');
+
+    text-align: center;
+  }
+
+  &-quote {
+    @include give-style(24px, 400, 32px, 'Source Sans Pro');
+
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    max-width: 520px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-video {
+    justify-content: center;
+    margin: 49px 0 88px;
+    display: flex;
+
+    &-icon {
+      width: 163px;
+      height: 163px;
+      border-radius: 50%;
+      background: $var-white;
+      color: $primary-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 75px;
+      transition: 0.4s ease-out;
+      cursor: pointer;
+
+      &:hover {
+        background: $primary-color;
+        color: $var-white;
+        transform: scale(0.9);
+      }
+
+      .ml {
+        margin-left: 10px;
+      }
+    }
+  }
+}

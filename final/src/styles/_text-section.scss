@@ -1,0 +1,82 @@
+.TEXT_SECTION {
+  background-color: $bg-color;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+
+  &-title {
+    @include give-style(36px, 400, 50px, 'Russo One');
+
+    color: $heading-color;
+    text-align: center;
+    max-width: 772px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-quote {
+    @include give-style(24px, 400, 32px, 'Poppins');
+
+    color: $article-text;
+    margin: 46px auto 56px;
+    text-align: center;
+    max-width: 500px;
+    display: block;
+  }
+
+  &-articles {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 73px;
+
+    &-item {
+      @include give-style(16px, 400, 22px, 'Source Sans Pro');
+
+      color: $color-article;
+      width: 48%;
+    }
+  }
+
+  &-btn {
+    @include give-style(14px, 400, 26px, 'Oswald');
+
+    background: $primary-color;
+    letter-spacing: 1.4px;
+    border-radius: 18px;
+    text-align: center;
+    padding: 5px 17px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+
+    &:hover {
+      transform-origin: bottom left;
+      animation: ButtonYahyo 2s ease-in-out 1;
+    }
+  }
+}
+
+@keyframes ButtonYahyo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
